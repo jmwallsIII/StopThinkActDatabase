@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jmwal\\source\\repos\\StopThinkAct\\StopThinkAct.csproj",
+      "projectUniqueName": "C:\\Users\\jmwal\\source\\repos\\StopThinkAct\\codekyproj\\StopThinkAct.csproj",
       "projectName": "StopThinkAct",
-      "projectPath": "C:\\Users\\jmwal\\source\\repos\\StopThinkAct\\StopThinkAct.csproj",
+      "projectPath": "C:\\Users\\jmwal\\source\\repos\\StopThinkAct\\codekyproj\\StopThinkAct.csproj",
       "packagesPath": "C:\\Users\\jmwal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jmwal\\source\\repos\\StopThinkAct\\obj\\",
+      "outputPath": "C:\\Users\\jmwal\\source\\repos\\StopThinkAct\\codekyproj\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jmwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
