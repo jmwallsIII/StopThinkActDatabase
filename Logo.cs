@@ -21,7 +21,7 @@ namespace StopThinkAct
  ____\ \       /  /        /  ___  \
 /______/TOP   /__/HINK    /__/   \__\CT
 ";
-            Console.WriteLine(logo , Color.Magenta);
+            Console.WriteLine(logo);
         }
     }
 }

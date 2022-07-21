@@ -7,21 +7,19 @@ using System.Threading.Tasks;
 namespace StopThinkAct
 {
 
-    internal class MainMenu
+    internal class MainMenu : Usernames
     {
-        static string TimeReference()
-        {
-            string now = DateTime.Now.ToString();
-            return now;
-        }
+      
+        
         public static bool Menu()
         {
             Console.Clear();
             Console.WriteLine("MAIN MENU: STOP.THINK.ACT" + Environment.NewLine);
-            Console.WriteLine("1) ADD NEW EVENT");
-            Console.WriteLine("2) VIEW ALL EVENTS");
-            Console.WriteLine("3) EXIT APPLICATION");
-            Console.Write("\r\nSelect an option: ");
+            Console.WriteLine("1.) ADD NEW EVENT");
+            Console.WriteLine("2.) VIEW ALL EVENTS");
+            Console.WriteLine("3.) EXIT APPLICATION");
+            Console.WriteLine("4.) CHOOSE DIFFERENT USER");
+            Console.Write(Environment.NewLine + "Select an option: ");
             switch (Console.ReadLine())     // BEGINNING FIRST SWITCH STATEMENT
             {
 
@@ -32,7 +30,7 @@ namespace StopThinkAct
                     Console.WriteLine("2) Return to MAIN MENU");
                     Console.WriteLine("3) EXIT APPLICATION" + Environment.NewLine);
                     Console.WriteLine("invalid option will revert to MAIN MENU");
-                    Console.Write("\r\nSelect an option: ");
+                    Console.Write(Environment.NewLine + "Select an option: ");
                     switch (Console.ReadLine())     //SECONDARY SWITCH STATEMENT #1
                     {
                         case "1":
@@ -68,7 +66,7 @@ namespace StopThinkAct
                     Console.WriteLine("2) Return to MAIN MENU");
                     Console.WriteLine("3) EXIT APPLICATION" + Environment.NewLine);
                     Console.WriteLine("invalid option will revert to MAIN MENU");
-                    Console.Write("\r\nSelect an option: ");
+                    Console.Write(Environment.NewLine + "Select an option: ");
                     switch (Console.ReadLine())     //SECONDARY SWITCH STATEMENT #2
                     {
                         case "1":
@@ -96,6 +94,9 @@ namespace StopThinkAct
                     Console.WriteLine("PRESS ANY KEY TO EXIT");
                     Environment.Exit(0);
                     return false;
+                case "4":
+                    Console.Clear();
+                    return SelectUser.SelectionPrompt();
                 default:
                     return true;        //END FIRST SWITCH STATEMENT
             }

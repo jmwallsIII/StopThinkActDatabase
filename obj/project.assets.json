@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jmwal\\.nuget\\packages\\": {}
+    "C:\\Users\\ginap\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jmwal\\source\\repos\\StopThinkAct\\codekyproj\\StopThinkAct.csproj",
+      "projectUniqueName": "C:\\Users\\Public\\codekyproj\\StopThinkActDatabase\\StopThinkAct.csproj",
       "projectName": "StopThinkAct",
-      "projectPath": "C:\\Users\\jmwal\\source\\repos\\StopThinkAct\\codekyproj\\StopThinkAct.csproj",
-      "packagesPath": "C:\\Users\\jmwal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jmwal\\source\\repos\\StopThinkAct\\codekyproj\\obj\\",
+      "projectPath": "C:\\Users\\Public\\codekyproj\\StopThinkActDatabase\\StopThinkAct.csproj",
+      "packagesPath": "C:\\Users\\ginap\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Public\\codekyproj\\StopThinkActDatabase\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\jmwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ginap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
