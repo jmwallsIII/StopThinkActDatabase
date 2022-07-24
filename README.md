@@ -1,11 +1,11 @@
 # StopThinkActDatabase
 
-C# console app stop.think.act
+C# console app stop.think.act 
 
 Hello my name is, John Walls III!
 ***
-My project is a C# Console app as stated in the description.  I got the idea for this app from a common practice
-that we do at my current job which is to fill out a stop.think act card whenever we see an unsafe act or 
+My project is a C# Console app that takes user input and logs it to a file.  I got the idea for this app from a common practice
+that we do at my current job which is to fill out a card whenever we see an unsafe act or 
 unsafe work condition.  So I thought to myself why not make a console application to simplify and
 alleviate the unecessary paper trail.  In my console app I have included the following 3+ features:
 
