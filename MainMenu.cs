@@ -80,7 +80,7 @@ namespace StopThinkAct
                                     return Menu();   // end tertiary switch 
                             }
                         case "2":
-                            return true;
+                            return Menu();
                         case "3":
                             Console.Clear();
                             Console.WriteLine("PRESS ANY KEY TO EXIT");
@@ -98,7 +98,7 @@ namespace StopThinkAct
                     Console.Clear();
                     return SelectUser.SelectionPrompt();
                 default:
-                    return true;        //END FIRST SWITCH STATEMENT
+                    return Menu();        //END FIRST SWITCH STATEMENT
             }
 
         }

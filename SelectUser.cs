@@ -25,6 +25,8 @@ namespace StopThinkAct
             Console.WriteLine("2.) " + user2.User);
             Console.WriteLine("3.) " + user3.User);
             Console.WriteLine("4.) " + user4.User);  // create alt menu for viewing
+            Console.WriteLine("5.) EXIT APPLICATION");
+            Console.Write(Environment.NewLine + "Select an option: ");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -32,19 +34,21 @@ namespace StopThinkAct
                     Console.WriteLine("Are you " + user1.User + " ?");
                     Console.WriteLine("1.) Yes");
                     Console.WriteLine("2.) No");
+                    Console.Write(Environment.NewLine + "Select an option: ");
                     switch (Console.ReadLine())
                     {
                         case "1":
                             Console.Clear();                      
                             File.AppendAllText(@"eventsfile.txt", Environment.NewLine + "USER:John:" + Environment.NewLine);
-                            return false;
+                            return MainMenu.Menu();
                         case "2":
                             Console.Clear();
-                            return true;
+                            return SelectionPrompt();
                         default:
                             Console.Clear();
                             Console.WriteLine("INVALID CHOICE");
                             return true;
+                            
                     }
                     
                 case "2":
@@ -52,14 +56,16 @@ namespace StopThinkAct
                     Console.WriteLine("Are you " + user2.User + " ?");
                     Console.WriteLine("1.) Yes");
                     Console.WriteLine("2.) No");
+                    Console.Write(Environment.NewLine + "Select an option: ");
                     switch (Console.ReadLine())
                     {
                         case "1":
-                            File.AppendAllText(@"eventsfile.txt", TimeReference() + Environment.NewLine + "1." + Console.ReadLine() + Environment.NewLine);
-                            return false;
+                            Console.Clear();
+                            File.AppendAllText(@"eventsfile.txt", Environment.NewLine + "USER:Tyler:" + Environment.NewLine);
+                            return MainMenu.Menu();
                         case "2":
                             Console.Clear();
-                            return true;
+                            return SelectionPrompt();
                         default:
                             Console.Clear();
                             Console.WriteLine("INVALID CHOICE");
@@ -71,20 +77,33 @@ namespace StopThinkAct
                     Console.WriteLine("Are you " + user3.User + " ?");
                     Console.WriteLine("1.) Yes");
                     Console.WriteLine("2.) No");
+                    Console.Write(Environment.NewLine + "Select an option: ");
                     switch (Console.ReadLine())
                     {
                         case "1":
-                            File.AppendAllText(@"eventsfile.txt", TimeReference() + Environment.NewLine + "1." + Console.ReadLine() + Environment.NewLine);
-                            return false;
+                            Console.Clear();
+                            File.AppendAllText(@"eventsfile.txt", Environment.NewLine + "USER:TESTER:" + Environment.NewLine);
+                            return MainMenu.Menu();
                         case "2":
                             Console.Clear();
-                            return true;
+                            return SelectionPrompt();
                         default:
                             Console.Clear();
                             Console.WriteLine("INVALID CHOICE");
                             return true;
                     }
-                    
+                case "4":
+                    Console.Clear();
+                    return AltMenu.AlternateMenu();
+                   
+
+                case "5":
+                    Console.Clear();
+                    Console.WriteLine("PRESS ANY KEY TO EXIT");
+                    Environment.Exit(0);
+                    return false;
+
+
                 default:
                     Console.Clear();
                     return SelectionPrompt();

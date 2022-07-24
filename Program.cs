@@ -31,14 +31,3 @@
         
     }
 }
-    
-
-
-
-
-// create an object for writng text
-//StreamWriter sw = new StreamWriter(@"file.txt", true);
-// write a line
-//sw.WriteLine();
-// close the file
-//sw.Close();
