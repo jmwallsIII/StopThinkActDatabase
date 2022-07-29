@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StopThinkAct
+namespace StopThinkAct                                                       // inheritance used here from username class (getting and setting names for username user objects)
 {
 
     public class SelectUser : Usernames
@@ -24,7 +24,7 @@ namespace StopThinkAct
             Console.WriteLine("1.) " + user1.User);
             Console.WriteLine("2.) " + user2.User);
             Console.WriteLine("3.) " + user3.User);
-            Console.WriteLine("4.) " + user4.User);  // create alt menu for viewing
+            Console.WriteLine("4.) " + user4.User);  
             Console.WriteLine("5.) EXIT APPLICATION");
             Console.Write(Environment.NewLine + "Select an option: ");
             switch (Console.ReadLine())

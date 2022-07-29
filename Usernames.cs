@@ -10,11 +10,8 @@ namespace StopThinkAct
     {
         public string? User
             { get; set; }
-        public static string TimeReference()
-        {
-            string now = DateTime.Now.ToString();
-            return now;
-        }
+
+        
     }
     
 }

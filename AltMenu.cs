@@ -18,7 +18,7 @@ namespace StopThinkAct
             Console.WriteLine("3.) CHOOSE DIFFERENT USER");
             Console.Write(Environment.NewLine + "Select an option: ");
             switch (Console.ReadLine())
-            {     // BEGINNING FIRST SWITCH STATEMENT
+            {     
                 case "1":
                     Console.Clear();
                     Console.WriteLine("VIEW ALL EVENTS" + Environment.NewLine);
@@ -27,17 +27,17 @@ namespace StopThinkAct
                     Console.WriteLine("3) EXIT APPLICATION" + Environment.NewLine);
                     Console.WriteLine("invalid option will revert to MAIN MENU");
                     Console.Write(Environment.NewLine + "Select an option: ");
-                    switch (Console.ReadLine())     //SECONDARY SWITCH STATEMENT #2
+                    switch (Console.ReadLine())     
                     {
                         case "1":
                             Console.Clear();
                             Console.WriteLine("START CURRENT ENTRIES:");
                             Console.WriteLine(File.ReadAllText(@"eventsfile.txt"));
                             Console.WriteLine("END CURRENT ENTRIES:  Press ENTER key to return to MAIN MENU");
-                            switch (Console.ReadLine())    // begin tertiary switch 
+                            switch (Console.ReadLine())    
                             {
                                 default:
-                                    return AlternateMenu();   // end tertiary switch 
+                                    return AlternateMenu();   
                             }
                         case "2":
                             return AlternateMenu();
@@ -47,7 +47,7 @@ namespace StopThinkAct
                             Environment.Exit(0);
                             return false;
                         default:
-                            return AlternateMenu();      //END SECONDARY SWITCH STATEMENT #2
+                            return AlternateMenu();      
                     }
                 case "2":
                     Console.Clear();

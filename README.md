@@ -16,3 +16,9 @@ alleviate the unecessary paper trail.  In my console app I have included the fol
 **Created an additional class which inherits one or more properties from its parent**
 
 **Implemented a log that records important events and writes them to a text file**
+
+**Created a list populated with several values, retrieved values from list and displayed in program**
+
+**Beneficial Information**
+***
+The txt file opens deep inside the bin folder, I added comments in my source code to identify the general area where I display my interpretaion of the required features.  
